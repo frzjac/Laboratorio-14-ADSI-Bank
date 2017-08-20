@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		link(href="//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css", rel="stylesheet")
+		link(href="//fonts.googleapis.com/css?family=Open+Sans", rel="stylesheet")
+		link(href="./css/styles.css", rel="stylesheet")
+		title Bancoop
+	body
+		.container
+			header.header
+				h1.header__logo
+					img(src="./img/logo.png", alt="")
+				h2.header__slogan <i>El Banco del Pueblo</i>
+				nav.header__nav
+					ul.header__menu
+						li.header__navItem
+							a(href='index.html') Home
+						li.header__navItem
+							a(href='#') Creditos
+						li.header__navItem
+							a(href='#') Leasing
+						li.header__navItem
+							a(href='#') Ahorros
+						li.header__navItem
+							a(href='#') Servicio al Cliente
+			.contenido
+				section.sidebar
+					form(action="" method="").login
+						h3.titulo Solicita tu cita
+						fieldset.login__fieldset
+							label(for="cuenta") Cuenta
+							input(mane="cuenta" placeholder="Numero de tu Cuenta" type="text" tabindex="1" required autofocus).login__input
+						fieldset.login__fieldset
+							label(for="tipo") Tipo
+							select(name="tipo" placeholder="Tipo de Cuenta").login__input
+								option(value="ahorros") Cuenta de Ahorros
+								option(value="corriente") Cuenta Corriente
+						fieldset.login__fieldset
+							label(for="clave") Clave
+							input(mane="clave" placeholder="Contraseña" type="password" tabindex="3" required ).login__input
+						
+						fieldset.login__fieldset
+							button(name="enviar" type="submit" data-submit="...Enviando").login__button Enviar
+					section.transacciones
+						h3.titulo Zona de Transacciones
+						ul
+							li.transacciones__item
+								a(href="") Banca Personal
+							li.transacciones__item
+								a(href="") Banca Empresarial
+							li.transacciones__item
+								a(href="") Banca Seguros
+							li.transacciones__item
+								a(href="") Pago de Facturas
+					section.tarjetas
+						h3.titulo Tarjetas de Credito
+						ul
+							li.tarjetas__item
+								a(href="") Credi Visa
+							li.tarjetas__item
+								a(href="") Credi MasterCard
+		
+				section.content
+					block content
+
+			footer.footer.full-width
+				h3.footer__titulo Bancoop - Entidad Financiera
+				span.footer__info Linea Gratuita 01 8000 000015
